@@ -1,0 +1,16 @@
+:mod:`mnetemplate`.Bar
+=============================
+
+.. currentmodule:: mnetemplate
+
+.. autoclass:: Bar
+
+   
+   .. automethod:: __init__
+   
+
+.. include:: mnetemplate.Bar.examples
+
+.. raw:: html
+
+    <div style='clear:both'></div>

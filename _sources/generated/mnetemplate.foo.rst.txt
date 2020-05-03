@@ -1,0 +1,12 @@
+:mod:`mnetemplate`.foo
+===================================
+
+.. currentmodule:: mnetemplate
+
+.. autofunction:: foo
+
+.. include:: mnetemplate.foo.examples
+
+.. raw:: html
+
+    <div style='clear:both'></div>
