@@ -1,10 +1,12 @@
-.. note::
-    :class: sphx-glr-download-link-note
+.. only:: html
 
-    Click :ref:`here <sphx_glr_download_auto_examples_plot_mne_objects_from_arrays.py>` to download the full example code
-.. rst-class:: sphx-glr-example-title
+    .. note::
+        :class: sphx-glr-download-link-note
 
-.. _sphx_glr_auto_examples_plot_mne_objects_from_arrays.py:
+        Click :ref:`here <sphx_glr_download_auto_examples_plot_mne_objects_from_arrays.py>`     to download the full example code
+    .. rst-class:: sphx-glr-example-title
+
+    .. _sphx_glr_auto_examples_plot_mne_objects_from_arrays.py:
 
 
 =====================================
@@ -29,13 +31,6 @@ numpy arrays is demonstrated.
 
 
 
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
 
 
 
@@ -68,6 +63,7 @@ Create arbitrary data
 
 
 
+
 Create an :class:`info <mne.Info>` object.
 
 
@@ -76,6 +72,7 @@ Create an :class:`info <mne.Info>` object.
 
     # It is also possible to use info from another raw object.
     info = mne.create_info(ch_names=ch_names, sfreq=sfreq, ch_types=ch_types)
+
 
 
 
@@ -121,6 +118,19 @@ Create a dummy :class:`mne.io.RawArray` object
             :class: sphx-glr-multi-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    Creating RawArray with float64 data, n_channels=4, n_times=10000
+    Current compensation grade : 0
+        Range : 0 ... 9999 =      0.000 ...     9.999 secs
+    Ready.
+
+    <Figure size 640x480 with 4 Axes>
+
 
 
 EpochsArray
@@ -161,6 +171,20 @@ EpochsArray
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    3 matching events found
+    No baseline correction applied
+    Not setting metadata
+    0 projection items activated
+    0 bad epochs dropped
+
+    <Figure size 512x384 with 5 Axes>
+
 
 
 EvokedArray
@@ -183,6 +207,15 @@ EvokedArray
 .. image:: /auto_examples/images/sphx_glr_plot_mne_objects_from_arrays_004.png
     :class: sphx-glr-single-img
 
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    <Figure size 640x300 with 1 Axes>
 
 
 
@@ -240,6 +273,8 @@ Create epochs by windowing the raw data.
     0 bad epochs dropped
     Loading data for 10 events and 991 original time points ...
     Loading data for 10 events and 991 original time points ...
+
+    <Figure size 512x384 with 5 Axes>
 
 
 
@@ -299,12 +334,14 @@ previous event list.
     Loading data for 19 events and 991 original time points ...
     Loading data for 19 events and 991 original time points ...
 
+    <Figure size 512x384 with 5 Axes>
+
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.982 seconds)
+   **Total running time of the script:** ( 0 minutes  2.894 seconds)
 
 
 .. _sphx_glr_download_auto_examples_plot_mne_objects_from_arrays.py:
@@ -317,13 +354,13 @@ previous event list.
 
 
 
-  .. container:: sphx-glr-download
+  .. container:: sphx-glr-download sphx-glr-download-python
 
      :download:`Download Python source code: plot_mne_objects_from_arrays.py <plot_mne_objects_from_arrays.py>`
 
 
 
-  .. container:: sphx-glr-download
+  .. container:: sphx-glr-download sphx-glr-download-jupyter
 
      :download:`Download Jupyter notebook: plot_mne_objects_from_arrays.ipynb <plot_mne_objects_from_arrays.ipynb>`
 
