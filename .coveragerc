@@ -2,8 +2,8 @@
 
 [run]
 branch = True
-source = mnetemplate
-include = */mnetemplate/*
+source = freqtag
+include = */freqtag/*
 omit =
     */setup.py
 

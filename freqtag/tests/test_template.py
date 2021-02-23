@@ -1,4 +1,4 @@
-from mnetemplate import foo
+from freqtag import foo
 
 
 def test_foo():

@@ -57,7 +57,7 @@ jobs:
             name: Check installation
             command: |
                which python
-               python -c "import mnetemplate"
+               python -c "import freqtag"
 
         # Build docs
         - run:

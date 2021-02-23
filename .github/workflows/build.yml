@@ -32,13 +32,13 @@ jobs:
         pip install flake8 pytest "pytest-cov<2.6" codecov
     - name: Lint with flake8
       run: |
-        flake8 mnetemplate examples
+        flake8 freqtag examples
     - name: Install
       run: |
         pip install -e .
     - name: Run tests
       run: |
-        pytest -v --cov=mnetemplate --pyargs mnetemplate
+        pytest -v --cov=freqtag --pyargs freqtag
     - name: Upload codecov
       run: |
         codecov
@@ -66,7 +66,7 @@ jobs:
          pip install -e .
      - name: Run tests
        run: |
-         pytest -v --cov=mnetemplate --pyargs mnetemplate
+         pytest -v --cov=freqtag --pyargs freqtag
 
 
   windows:
@@ -92,4 +92,4 @@ jobs:
         pip install -e .
     - name: Run tests
       run: |
-        pytest -v --cov=mnetemplate --pyargs mnetemplate
+        pytest -v --cov=freqtag --pyargs freqtag

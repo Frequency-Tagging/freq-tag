@@ -17,9 +17,9 @@ the project you will create:
 +---------------+----------------------+------------------------+
 |repo name      | mne-project-template | mne-foo                |
 +---------------+----------------------+------------------------+
-|package name   | mnetemplate          | mnefoo                 |
+|package name   | freqtag          | mnefoo                 |
 +---------------+----------------------+------------------------+
-|import example | import mnetemplate   | import mnefoo          |
+|import example | import freqtag   | import mnefoo          |
 +---------------+----------------------+------------------------+
 
 
@@ -46,28 +46,28 @@ information. Then run the bootsrap script::
 
 1.1.2 Update your project manually
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Replace all occurrences of ``mnetemplate`` and ``mne-template``
+Replace all occurrences of ``freqtag`` and ``freq-tag``
 with the name of you own contribution. You can find all the occurrences using
 the following command::
 
-    $ git grep mnetemplate
-    $ git grep mne-template
+    $ git grep freqtag
+    $ git grep freq-tag
 
 You can do this with your favorite editor or use the ``sed`` tool.
 In linux machine::
 
-    $ git grep -l 'mnetemplate' | xargs sed -i 's/mnetemplate/mnefoo/g'
-    $ git grep -l 'mne-template' | xargs sed -i 's/mne-template/mne-foo/g'
+    $ git grep -l 'freqtag' | xargs sed -i 's/freqtag/mnefoo/g'
+    $ git grep -l 'freq-tag' | xargs sed -i 's/freq-tag/mne-foo/g'
 
 this is how to do it in Macosx machine::
 
-    $ git grep -l 'mnetemplate' | xargs sed -i '' -e 's/mnetemplate/mnefoo/g'
-    $ git grep -l 'mne-template' | xargs sed -i '' -e 's/mne-template/mne-foo/g'
+    $ git grep -l 'freqtag' | xargs sed -i '' -e 's/freqtag/mnefoo/g'
+    $ git grep -l 'freq-tag' | xargs sed -i '' -e 's/freq-tag/mne-foo/g'
 
    
 Update the module directory name::
 
-    $ mv mnetemplate mnefoo
+    $ mv freqtag mnefoo
 
 1.3 Remove history and convert it into a new project
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

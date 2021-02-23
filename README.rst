@@ -2,31 +2,31 @@
 
 |GHActions|_ |Codecov|_ |CircleCI|_
 
-.. |GHActions| image:: https://github.com/mne-tools/mne-project-template/workflows/build/badge.svg
-.. _GHActions: https://github.com/mne-tools/mne-project-template/actions
+.. |GHActions| image:: https://github.com/Frequency-Tagging/freq-tag/workflows/build/badge.svg
+.. _GHActions: https://github.com/Frequency-Tagging/freq-tag/actions
 
-.. |Codecov| image:: https://codecov.io/gh/mne-tools/mne-project-template/branch/master/graph/badge.svg
-.. _Codecov: https://codecov.io/gh/mne-tools/mne-project-template
+.. |Codecov| image:: https://codecov.io/gh/Frequency-Tagging/freq-tag/branch/master/graph/badge.svg
+.. _Codecov: https://codecov.io/gh/Frequency-Tagging/freq-tag
 
-.. |CircleCI| image:: https://circleci.com/gh/mne-tools/mne-project-template.svg?style=svg
-.. _CircleCI: https://circleci.com/gh/mne-tools/mne-project-template/tree/master
+.. |CircleCI| image:: https://circleci.com/gh/Frequency-Tagging/freq-tag.svg?style=svg
+.. _CircleCI: https://circleci.com/gh/Frequency-Tagging/freq-tag/tree/master
 
-mne-project-template - A template for mne-python compatible extensions
+freq-tag - A template for mne-python compatible extensions
 ======================================================================
 
 .. _mne-python: https://mne.tools
 
-**mne-project-template** is a template project for mne-python_ compatible
+**freq-tag** is a template project for mne-python_ compatible
 extensions.
 
 *Thank you for cleanly contributing to the mne-python ecosystem!*
 
-.. _documentation: https://mne.tools/mne-project-template
+.. _documentation: https://mne.tools/freq-tag
 
 Refer to the documentation_ to modify the template for your own mne-python
 extension or follow this quick reference::
 
-    $ git clone https://github.com/mne-tools/mne-project-template.git mne-foo
+    $ git clone https://github.com/Frequency-Tagging/freq-tag.git mne-foo
     $ cd mne-foo
     $ # update mne_project_template_bootstrap.sh
     $ bash mne_project_template_bootstrap.sh

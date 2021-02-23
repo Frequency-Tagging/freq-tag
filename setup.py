@@ -7,19 +7,19 @@ import os
 from setuptools import find_packages, setup
 
 # get __version__ from _version.py
-ver_file = os.path.join('mnetemplate', '_version.py')
+ver_file = os.path.join('freqtag', '_version.py')
 with open(ver_file) as f:
     exec(f.read())
 
-DISTNAME = 'mne-template'
+DISTNAME = 'freq-tag'
 DESCRIPTION = 'A template for mne-python compatible packages.'
 with codecs.open('README.rst', encoding='utf-8-sig') as f:
     LONG_DESCRIPTION = f.read()
 MAINTAINER = 'your name'
 MAINTAINER_EMAIL = 'user@mail.edu'
-URL = 'https://github.com/mne-tools/mne-project-template'
+URL = 'https://github.com/Frequency-Tagging/freq-tag'
 LICENSE = 'new BSD'
-DOWNLOAD_URL = 'https://github.com/mne-tools/mne-project-template'
+DOWNLOAD_URL = 'https://github.com/Frequency-Tagging/freq-tag'
 VERSION = __version__  # noqa
 INSTALL_REQUIRES = ['numpy', 'scipy', 'mne']
 CLASSIFIERS = ['Intended Audience :: Science/Research',
