@@ -1,0 +1,12 @@
+:mod:`freqtag`.foo
+===============================
+
+.. currentmodule:: freqtag
+
+.. autofunction:: foo
+
+.. include:: freqtag.foo.examples
+
+.. raw:: html
+
+    <div style='clear:both'></div>

@@ -20,6 +20,7 @@ Introductory examples.
 .. only:: html
 
  .. figure:: /auto_examples/images/thumb/sphx_glr_plot_sine_thumb.png
+     :alt: Simple plot example
 
      :ref:`sphx_glr_auto_examples_plot_sine.py`
 
@@ -40,6 +41,7 @@ Introductory examples.
 .. only:: html
 
  .. figure:: /auto_examples/images/thumb/sphx_glr_plot_mne_objects_from_arrays_thumb.png
+     :alt: Creating MNE objects from data arrays
 
      :ref:`sphx_glr_auto_examples_plot_mne_objects_from_arrays.py`
 
@@ -66,13 +68,13 @@ Introductory examples.
 
   .. container:: sphx-glr-download sphx-glr-download-python
 
-    :download:`Download all examples in Python source code: auto_examples_python.zip <//github/workspace/doc/auto_examples/auto_examples_python.zip>`
+    :download:`Download all examples in Python source code: auto_examples_python.zip </auto_examples/auto_examples_python.zip>`
 
 
 
   .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-    :download:`Download all examples in Jupyter notebooks: auto_examples_jupyter.zip <//github/workspace/doc/auto_examples/auto_examples_jupyter.zip>`
+    :download:`Download all examples in Jupyter notebooks: auto_examples_jupyter.zip </auto_examples/auto_examples_jupyter.zip>`
 
 
 .. only:: html

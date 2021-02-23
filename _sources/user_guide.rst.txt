@@ -9,9 +9,9 @@ User guide: create your own mne project
 Some title
 ----------
 
-This is an example on how to import :meth:`mnetemplate.foo`::
+This is an example on how to import :meth:`freqtag.foo`::
 
-    >>> from mnetemplate import foo
+    >>> from freqtag import foo
 
 Once imported, you can call it::
 

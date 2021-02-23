@@ -1,0 +1,16 @@
+:mod:`freqtag`.Bar
+=========================
+
+.. currentmodule:: freqtag
+
+.. autoclass:: Bar
+
+   
+   .. automethod:: __init__
+   
+
+.. include:: freqtag.Bar.examples
+
+.. raw:: html
+
+    <div style='clear:both'></div>
