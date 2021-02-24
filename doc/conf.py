@@ -14,6 +14,7 @@
 
 import sys
 import os
+from datetime import date
 
 import sphinx_gallery
 import sphinx_rtd_theme
@@ -75,7 +76,9 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'freq-tag'
-copyright = u'2016, Vighnesh Birodkar'
+td = date.today()
+copyright = u'2021-%s, Frequency-Tagging Developers. Last updated on %s' % (td.year,
+                                                                            td.isoformat())
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

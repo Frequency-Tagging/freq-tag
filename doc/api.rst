@@ -1,13 +1,11 @@
-####################
-project-template API
-####################
-
-This is an example on how to document the API of your own project.
+############
+freq-tag API
+############
 
 .. currentmodule:: freqtag
 
-MNE-Template
-============
+freq-tag
+========
 
 .. autosummary::
    :toctree: generated/

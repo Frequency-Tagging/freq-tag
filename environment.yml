@@ -1,4 +1,4 @@
-name: mne-project-template
+name: freqtag
 dependencies:
   - numpy
   - scipy

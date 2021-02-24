@@ -1,5 +1,5 @@
 #! /usr/bin/env python
-"""A template for mne-python compatible packages."""
+"""A Python package facilitating the analysis of frequency-tagging data."""
 
 import codecs
 import os
@@ -12,11 +12,11 @@ with open(ver_file) as f:
     exec(f.read())
 
 DISTNAME = 'freq-tag'
-DESCRIPTION = 'A template for mne-python compatible packages.'
+DESCRIPTION = 'A Python package facilitating the analysis of frequency-tagging data'
 with codecs.open('README.rst', encoding='utf-8-sig') as f:
     LONG_DESCRIPTION = f.read()
-MAINTAINER = 'your name'
-MAINTAINER_EMAIL = 'user@mail.edu'
+MAINTAINER = 'Evgenii Kalenkovich'
+MAINTAINER_EMAIL = 'e.kalenkovich@gmail.com'
 URL = 'https://github.com/Frequency-Tagging/freq-tag'
 LICENSE = 'new BSD'
 DOWNLOAD_URL = 'https://github.com/Frequency-Tagging/freq-tag'
