@@ -5,7 +5,7 @@
 - Create (first time only) or update the conda environment using `environment.yml`.
 - Use `pip` to install `freqtag` in the editable mode (first time only). 
 - Make your changes.
-- Run tests, build docs.
+- Check test coverage, run tests, build docs.
 - Push to GitHub and open a PR.
 
 ## Creating/updating the conda environment
@@ -30,6 +30,14 @@ From root
 
 ```
 pip install -e .
+```
+
+## Check test coverage
+
+From `freqtag`:
+
+```sh
+pytest --cov=freqtag tests
 ```
 
 ## Running tests
