@@ -7,3 +7,4 @@ dependencies:
   - pip
   - pip:
       - -r file:freqtag/tests/requirements.txt
+      - -r file:doc/requirements.txt
