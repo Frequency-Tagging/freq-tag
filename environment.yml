@@ -8,3 +8,4 @@ dependencies:
   - pip:
       - -r file:freqtag/tests/requirements.txt
       - -r file:doc/requirements.txt
+      - twine

@@ -55,3 +55,22 @@ From `doc`:
 ```sh
 make html
 ```
+
+
+# Deploying the package
+
+## PyPI
+
+- build
+- check
+- [upload to TestPyPI]
+- upload to PyPI
+
+From root:
+
+```sh
+python setup.py sdist bdist_wheel
+twine check dist/*
+[twine upload --repository testpypi dist/*]
+twine upload dist/*
+```

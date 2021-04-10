@@ -13,7 +13,7 @@ with open(ver_file) as f:
 
 DISTNAME = 'freq-tag'
 DESCRIPTION = 'A Python package facilitating the analysis of frequency-tagging data'
-with codecs.open('README.rst', encoding='utf-8-sig') as f:
+with open('README.rst', encoding='utf-8-sig') as f:
     LONG_DESCRIPTION = f.read()
 MAINTAINER = 'Evgenii Kalenkovich'
 MAINTAINER_EMAIL = 'e.kalenkovich@gmail.com'
@@ -59,6 +59,7 @@ setup(name=DISTNAME,
       version=VERSION,
       download_url=DOWNLOAD_URL,
       long_description=LONG_DESCRIPTION,
+      long_description_content_type='text/x-rst',
       zip_safe=False,  # the package can run out of an .egg file
       classifiers=CLASSIFIERS,
       packages=find_packages(),
