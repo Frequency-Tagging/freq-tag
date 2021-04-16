@@ -8,25 +8,29 @@
 - Check test coverage, run tests, build docs.
 - Push to GitHub and open a PR.
 
-## Creating/updating the conda environment
+The first four steps are described below in detail.
 
-From root:
+## Creating/updating a conda virtual environment
+
+Open a terminal, clone the repository, and cd into the repositories root folder.
+
+From root folder:
 
 ```sh
 conda env update -n freqtag -f environment.yml --prune
 ```
 
-Once the process is finished, activate the environment with
+Once the process is finished, activate the conda environment with
 
 ```sh
 conda activate freqtag
 ```
 
-All the other commands should be run within the `freqtag` environment.
+All the other commands should be run with the activated `freqtag` conda environment.
 
-## Install `freqtag` in the editable mode
+## Install `freqtag` package in editable mode
 
-From root
+From root folder:
 
 ```
 pip install -e .
@@ -34,7 +38,7 @@ pip install -e .
 
 ## Check test coverage
 
-From `freqtag`:
+cd to `freqtag` folder:
 
 ```sh
 pytest --cov=freqtag tests
@@ -42,7 +46,7 @@ pytest --cov=freqtag tests
 
 ## Running tests
 
-From root:
+cd to root folder:
 
 ```sh
 python -m pytest freqtag
@@ -50,7 +54,7 @@ python -m pytest freqtag
 
 ## Building docs
 
-From `doc`:
+cd to `doc` folder:
 
 ```sh
 make html
