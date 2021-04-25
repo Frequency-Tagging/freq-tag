@@ -52,13 +52,13 @@ An example plotting a sine wave.
            title='About as simple as it gets, folks')
     ax.grid()
 
-    fig.savefig("test.png")
+    # fig.savefig("test.png")
     plt.show()
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.176 seconds)
+   **Total running time of the script:** ( 0 minutes  0.128 seconds)
 
 
 .. _sphx_glr_download_auto_examples_plot_sine.py:

@@ -2,17 +2,11 @@
 
 .. _user_guide:
 
-=======================================
-User guide: create your own mne project
-=======================================
+============================
+User guide: minimal analysis
+============================
 
-Some title
-----------
+The most basic analysis of frequency-tagging data
+-------------------------------------------------
 
-This is an example on how to import :meth:`freqtag.foo`::
-
-    >>> from freqtag import foo
-
-Once imported, you can call it::
-
-    >>> print(foo())
+TODO: add the simplest possible example
