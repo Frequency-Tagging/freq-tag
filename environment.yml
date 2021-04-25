@@ -1,5 +1,12 @@
-name: mne-project-template
+name: freqtag
 dependencies:
+  - python=3.7
   - numpy
   - scipy
-  - mne
+  - conda-forge::mne
+  - flake8
+  - pip
+  - pip:
+      - -r file:freqtag/tests/requirements.txt
+      - -r file:doc/requirements.txt
+      - twine
