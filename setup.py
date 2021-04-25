@@ -1,7 +1,6 @@
 #! /usr/bin/env python
 """A Python package facilitating the analysis of frequency-tagging data."""
 
-import codecs
 import os
 
 from setuptools import find_packages, setup
@@ -12,7 +11,8 @@ with open(ver_file) as f:
     exec(f.read())
 
 DISTNAME = 'freq-tag'
-DESCRIPTION = 'A Python package facilitating the analysis of frequency-tagging data'
+DESCRIPTION = 'A Python package facilitating the analysis of ' \
+              'frequency-tagging data '
 with open('README.rst', encoding='utf-8-sig') as f:
     LONG_DESCRIPTION = f.read()
 MAINTAINER = 'Evgenii Kalenkovich'
