@@ -7,15 +7,4 @@ freq-tag API
 freq-tag
 ========
 
-.. autosummary::
-   :toctree: generated/
-   :template: function.rst
-
-   foo
-
-.. autosummary::
-   :toctree: generated/
-   :template: class.rst
-
-   Bar
 
