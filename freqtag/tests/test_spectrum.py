@@ -10,7 +10,8 @@ def tutorial_epochs():
 
     # Load raw data
     data_path = mne.datasets.ssvep.data_path()
-    bids_fname = data_path + '/sub-02/ses-01/eeg/sub-02_ses-01_task-ssvep_eeg.vhdr'
+    bids_fname = (data_path +
+                  '/sub-02/ses-01/eeg/sub-02_ses-01_task-ssvep_eeg.vhdr')
 
     raw = mne.io.read_raw_brainvision(bids_fname, preload=True, verbose=False)
     raw.info['line_freq'] = 50.
@@ -65,7 +66,8 @@ def tutorial_spectrum(tutorial_epochs):
 
 def test_from_mne_epochs(tutorial_spectrum, tutorial_epochs):
     psds, freqs = tutorial_spectrum
-    spectrum = Spectrum.from_mne_epochs(tutorial_epochs, tmin=1., tmax=20., fmin=1., fmax=90.)
+    spectrum = Spectrum.from_mne_epochs(tutorial_epochs, tmin=1., tmax=20.,
+                                        fmin=1., fmax=90.)
 
     assert np.allclose(spectrum.data, psds)
     assert np.allclose(spectrum.frequencies, freqs)

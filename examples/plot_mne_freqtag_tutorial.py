@@ -29,7 +29,7 @@ brain the statistical analysis will be carried out on an occipital
 ROI.
 
 .. contents:: Outline
-   :depth: 2    
+   :depth: 2
 """  # noqa: E501
 # Authors: Dominik Welke <dominik.welke@web.de>
 #          Evgenii Kalenkovich <e.kalenkovich@gmail.com>
@@ -127,7 +127,8 @@ epochs = mne.Epochs(
 #
 
 fmin, fmax = 1., 90.
-spectrum = Spectrum.from_mne_epochs(epochs, tmin=1., tmax=20., fmin=fmin, fmax=fmax)
+spectrum = Spectrum.from_mne_epochs(epochs, tmin=1., tmax=20.,
+                                    fmin=fmin, fmax=fmax)
 psds, freqs = spectrum.data, spectrum.frequencies
 
 
