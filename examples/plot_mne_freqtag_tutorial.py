@@ -41,6 +41,8 @@ import mne
 import numpy as np
 from scipy.stats import ttest_rel
 
+from freqtag import Spectrum
+
 ###############################################################################
 # Data preprocessing
 # ------------------
@@ -124,20 +126,9 @@ epochs = mne.Epochs(
 # function (i.e. applying a boxcar window).
 #
 
-tmin = 1.
-tmax = 20.
-fmin = 1.
-fmax = 90.
-sfreq = epochs.info['sfreq']
-
-psds, freqs = mne.time_frequency.psd_welch(
-    epochs,
-    n_fft=int(sfreq * (tmax - tmin)),
-    n_overlap=0, n_per_seg=None,
-    tmin=tmin, tmax=tmax,
-    fmin=fmin, fmax=fmax,
-    window='boxcar',
-    verbose=False)
+fmin, fmax = 1., 90.
+spectrum = Spectrum.from_mne_epochs(epochs, tmin=1., tmax=20., fmin=fmin, fmax=fmax)
+psds, freqs = spectrum.data, spectrum.frequencies
 
 
 ###############################################################################
@@ -542,6 +533,7 @@ print("15 Hz trials: 36 Hz SNR is significantly lower than 45 Hz SNR"
 #
 
 stim_bandwidth = .5
+sfreq = epochs.info['sfreq']
 
 # shorten data and welch window
 window_lengths = [i for i in range(2, 21, 2)]
