@@ -7,4 +7,8 @@ freq-tag API
 freq-tag
 ========
 
+.. autosummary::
+   :toctree: generated/
+   :template: class.rst
 
+   Spectrum
