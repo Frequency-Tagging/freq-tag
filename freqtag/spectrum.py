@@ -8,10 +8,11 @@ class Spectrum(object):
         self.kind = kind
 
     @classmethod
-    def from_mne_epochs(cls, epochs, tmin=0, tmax=np.inf, fmin=0,
-                        fmax=np.inf) -> 'Spectrum':
+    def psd_from_mne_epochs(cls, epochs, tmin=0, tmax=np.inf, fmin=0,
+                            fmax=np.inf) -> 'Spectrum':
         """
-        Applies Fourier transform to data in an mne.Epochs object.
+        Applies Fourier transform to data in an mne.Epochs object and
+        calculates power spectral density.
 
         :param epochs: mne.Epochs object
         :param tmin: minimum time of interest
@@ -23,7 +24,7 @@ class Spectrum(object):
         from mne.time_frequency import psd_welch
 
         n_fft = int(epochs.info['sfreq'] * (tmax - tmin))
-        power, frequencies = psd_welch(
+        psd, frequencies = psd_welch(
             epochs,
             tmin=tmin, tmax=tmax,
             fmin=fmin, fmax=fmax,
@@ -31,4 +32,4 @@ class Spectrum(object):
             n_fft=n_fft, n_overlap=0, n_per_seg=None, window='boxcar',
             verbose=False)
 
-        return cls(data=power, frequencies=frequencies, kind='power')
+        return cls(data=psd, frequencies=frequencies, kind='psd')
