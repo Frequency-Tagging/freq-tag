@@ -34,11 +34,13 @@ class Spectrum(object):
 
         # Calculate power
         power = np.abs(F) ** 2
-        # power at avery frequency but the DC and Nyqvist should be multiplied by two
+        # power at avery frequency but the DC and Nyqvist should be multiplied
+        # by two
         nyqvist_index = ceil(n_fft / 2)
         power[1:nyqvist_index] *= 2
 
-        # We are calculating "density" so we need to convert power to "1/Hz" units.
+        # We are calculating "density" so we need to convert power to "1/Hz"
+        # units.
         psd = power / epochs.info['sfreq']
 
         # Calculate frequencies and remove the unnecessary ones
