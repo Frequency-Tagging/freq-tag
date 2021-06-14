@@ -127,7 +127,7 @@ epochs = mne.Epochs(
 #
 
 fmin, fmax = 1., 90.
-spectrum = Spectrum.from_mne_epochs(epochs, tmin=1., tmax=20.,
+spectrum = Spectrum.psd_from_mne_epochs(epochs, tmin=1., tmax=20.,
                                     fmin=fmin, fmax=fmax)
 psds, freqs = spectrum.data, spectrum.frequencies
 
