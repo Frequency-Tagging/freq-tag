@@ -41,7 +41,7 @@ import mne
 import numpy as np
 from scipy.stats import ttest_rel
 
-from freqtag import Spectrum
+from freqtag import psd_from_mne_epochs
 
 ###############################################################################
 # Data preprocessing
@@ -127,7 +127,7 @@ epochs = mne.Epochs(
 #
 
 fmin, fmax = 1., 90.
-spectrum = Spectrum.psd_from_mne_epochs(epochs, tmin=1., tmax=20.,
+spectrum = psd_from_mne_epochs(epochs, tmin=1., tmax=20.,
                                         fmin=fmin, fmax=fmax)
 psds, freqs = spectrum.data, spectrum.frequencies
 
