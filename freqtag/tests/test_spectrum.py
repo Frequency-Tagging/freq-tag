@@ -1,7 +1,7 @@
 import pytest
 import numpy as np
 
-from freqtag import Spectrum, psd_from_mne_epochs
+from freqtag import psd_from_mne_epochs
 
 
 @pytest.fixture
