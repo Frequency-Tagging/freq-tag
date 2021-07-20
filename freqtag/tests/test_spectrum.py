@@ -1,7 +1,7 @@
 import pytest
 import numpy as np
 
-from freqtag import Spectrum
+from freqtag import Spectrum, psd_from_mne_epochs
 
 
 @pytest.fixture
@@ -66,8 +66,8 @@ def tutorial_spectrum(tutorial_epochs):
 
 def test_from_mne_epochs(tutorial_spectrum, tutorial_epochs):
     psds, freqs = tutorial_spectrum
-    spectrum = Spectrum.psd_from_mne_epochs(tutorial_epochs, tmin=1., tmax=20.,
-                                            fmin=1., fmax=90.)
+    spectrum = psd_from_mne_epochs(tutorial_epochs, tmin=1., tmax=20.,
+                                   fmin=1., fmax=90.)
 
     assert np.allclose(spectrum.data, psds)
     assert np.allclose(spectrum.frequencies, freqs)
