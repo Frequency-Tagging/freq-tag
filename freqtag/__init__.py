@@ -1,4 +1,4 @@
 from ._version import __version__
-from ._template import foo, Bar
+from .spectrum import Spectrum, psd_from_mne_epochs
 
-__all__ = ['__version__', 'foo', 'Bar']
+__all__ = ['__version__', 'Spectrum', 'psd_from_mne_epochs']
