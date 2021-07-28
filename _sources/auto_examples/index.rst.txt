@@ -15,14 +15,14 @@ Introductory examples.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="An example plotting a sine wave.">
+    <div class="sphx-glr-thumbcontainer" tooltip="In this tutorial we compute the frequency spectrum and quantify signal-to-noise ratio (SNR) at ...">
 
 .. only:: html
 
- .. figure:: /auto_examples/images/thumb/sphx_glr_plot_sine_thumb.png
-     :alt: Simple plot example
+ .. figure:: /auto_examples/images/thumb/sphx_glr_plot_mne_freqtag_tutorial_thumb.png
+     :alt: Frequency-tagging: Basic analysis of an SSVEP/vSSR dataset
 
-     :ref:`sphx_glr_auto_examples_plot_sine.py`
+     :ref:`sphx_glr_auto_examples_plot_mne_freqtag_tutorial.py`
 
 .. raw:: html
 
@@ -32,28 +32,7 @@ Introductory examples.
 .. toctree::
    :hidden:
 
-   /auto_examples/plot_sine
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="In this simple example, the creation of MNE objects from numpy arrays is demonstrated.">
-
-.. only:: html
-
- .. figure:: /auto_examples/images/thumb/sphx_glr_plot_mne_objects_from_arrays_thumb.png
-     :alt: Creating MNE objects from data arrays
-
-     :ref:`sphx_glr_auto_examples_plot_mne_objects_from_arrays.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /auto_examples/plot_mne_objects_from_arrays
+   /auto_examples/plot_mne_freqtag_tutorial
 .. raw:: html
 
     <div class="sphx-glr-clear"></div>

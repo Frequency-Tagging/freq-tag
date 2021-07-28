@@ -1,0 +1,16 @@
+﻿:mod:`freqtag`.Spectrum
+==============================
+
+.. currentmodule:: freqtag
+
+.. autoclass:: Spectrum
+
+   
+   .. automethod:: __init__
+   
+
+.. include:: freqtag.Spectrum.examples
+
+.. raw:: html
+
+    <div style='clear:both'></div>

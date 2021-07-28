@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>General examples &mdash; freq-tag 0.0.1 documentation</title>
+  <title>freqtag.Spectrum &mdash; freq-tag 0.0.1 documentation</title>
   
 
   
@@ -46,8 +46,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Frequency-tagging: Basic analysis of an SSVEP/vSSR dataset" href="plot_mne_freqtag_tutorial.html" />
-    <link rel="prev" title="freqtag.Spectrum" href="../generated/freqtag.Spectrum.html" /> 
+    <link rel="next" title="General examples" href="../auto_examples/index.html" />
+    <link rel="prev" title="freq-tag API" href="../api.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -97,16 +97,22 @@
             
             
               <p class="caption"><span class="caption-text">Documentation</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../user_guide.html">User guide: minimal analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api.html">freq-tag API</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Tutorial - Examples</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">General examples</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="plot_mne_freqtag_tutorial.html">Frequency-tagging: Basic analysis of an SSVEP/vSSR dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide.html">User guide: minimal analysis</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api.html">freq-tag API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../api.html#freq-tag">freq-tag</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">freqtag</span></code>.Spectrum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#examples-using-freqtag-spectrum">Examples using <code class="docutils literal notranslate"><span class="pre">freqtag.Spectrum</span></code></a></li>
 </ul>
 </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorial - Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../auto_examples/index.html">General examples</a></li>
 </ul>
 
             
@@ -155,13 +161,15 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>General examples</li>
+          <li><a href="../api.html">freq-tag API</a> &raquo;</li>
+        
+      <li><code class="xref py py-mod docutils literal notranslate"><span class="pre">freqtag</span></code>.Spectrum</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/auto_examples/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/generated/freqtag.Spectrum.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -174,24 +182,26 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="general-examples">
-<span id="sphx-glr-auto-examples"></span><span id="id1"></span><h1>General examples<a class="headerlink" href="#general-examples" title="Permalink to this headline">¶</a></h1>
-<p>Introductory examples.</p>
-<div class="sphx-glr-thumbcontainer" tooltip="In this tutorial we compute the frequency spectrum and quantify signal-to-noise ratio (SNR) at ..."><div class="figure align-default" id="id2">
+  <div class="section" id="freqtag-spectrum">
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">freqtag</span></code>.Spectrum<a class="headerlink" href="#freqtag-spectrum" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="freqtag.Spectrum">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">freqtag.</span></span><span class="sig-name descname"><span class="pre">Spectrum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequencies</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kind</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/freqtag/spectrum.html#Spectrum"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#freqtag.Spectrum" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="freqtag.Spectrum.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequencies</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kind</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/freqtag/spectrum.html#Spectrum.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#freqtag.Spectrum.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="examples-using-freqtag-spectrum">
+<h2>Examples using <code class="docutils literal notranslate"><span class="pre">freqtag.Spectrum</span></code><a class="headerlink" href="#examples-using-freqtag-spectrum" title="Permalink to this headline">¶</a></h2>
+<div class="sphx-glr-thumbcontainer" tooltip="In this tutorial we compute the frequency spectrum and quantify signal-to-noise ratio (SNR) at ..."><div class="figure align-default" id="id1">
 <img alt="Frequency-tagging: Basic analysis of an SSVEP/vSSR dataset" src="../_images/sphx_glr_plot_mne_freqtag_tutorial_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="plot_mne_freqtag_tutorial.html#sphx-glr-auto-examples-plot-mne-freqtag-tutorial-py"><span class="std std-ref">Frequency-tagging: Basic analysis of an SSVEP/vSSR dataset</span></a></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../auto_examples/plot_mne_freqtag_tutorial.html#sphx-glr-auto-examples-plot-mne-freqtag-tutorial-py"><span class="std std-ref">Frequency-tagging: Basic analysis of an SSVEP/vSSR dataset</span></a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
-</div><div class="toctree-wrapper compound">
-</div>
-<div class="sphx-glr-clear"></div><div class="sphx-glr-footer class sphx-glr-footer-gallery docutils container">
-<div class="sphx-glr-download sphx-glr-download-python docutils container">
-<p><a class="reference download internal" download="" href="../_downloads/07fcc19ba03226cd3d83d4e40ec44385/auto_examples_python.zip"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">all</span> <span class="pre">examples</span> <span class="pre">in</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">auto_examples_python.zip</span></code></a></p>
-</div>
-<div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
-<p><a class="reference download internal" download="" href="../_downloads/6f1e7a639e0699d6164445b55e6c116d/auto_examples_jupyter.zip"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">all</span> <span class="pre">examples</span> <span class="pre">in</span> <span class="pre">Jupyter</span> <span class="pre">notebooks:</span> <span class="pre">auto_examples_jupyter.zip</span></code></a></p>
-</div>
-</div>
-<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</div><div style='clear:both'></div></div>
 </div>
 
 
@@ -200,8 +210,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="plot_mne_freqtag_tutorial.html" class="btn btn-neutral float-right" title="Frequency-tagging: Basic analysis of an SSVEP/vSSR dataset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="../generated/freqtag.Spectrum.html" class="btn btn-neutral float-left" title="freqtag.Spectrum" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../auto_examples/index.html" class="btn btn-neutral float-right" title="General examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../api.html" class="btn btn-neutral float-left" title="freq-tag API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
